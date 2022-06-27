@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs basicos</title>
+</head>
+<body>
+    
+    <h1>Inputs basicos</h1>
+
+    <form action="/Atividade_1/htmls/inputs_basicos.html" method="post">
+
+        <label>Nome</label> <br><!--Utilizada para colocar um titulo-->
+        <input type="text" name="nome" class="" id=""/><br><!--Quando usar o NAME? usado pelo BACK-AND, quando for recuperar a informação vai aparecer o NAME, nome do valor no Back-and.-->
+        <!--Quando usar o class? Class e utilizado para o CSS.-->
+        <!--Quando usar o ID? utilizado para javascript-->
+        <label>Senha</label><br>
+        <input type="password" name="Senha" /><br>
+
+        <label>Opcões</label><br>
+        <input type="radio" name="Opcões"/> 1
+        <input type="radio" name="Opcões"/> 2
+        <input type="radio" name="Opcões"/> 3 <br>
+
+        <!--Multipla escolha vc trabalha com checkbox-->
+        <label>Multipla escolha</label><br>
+        <input type="checkbox" name="Multiplo">1
+        <input type="checkbox" name="Multiplo">2
+        <input type="checkbox" name="Multiplo">3
+        <br>
+        <!--Textarea tem estrutura um pouco diferente, ele nao usa a tag input-->
+        
+        <label>Texto</label><br>
+        <textarea name="Texto" cols="30" rows="10"></textarea>
+
+        <br>
+        <!--Sempre que quiser subir um arquivo-->
+        <label>Arquivo</label><br>
+        <input type="file" name="arquivo">
+
+
+
+
+
+    </form>
+
+
+
+
+
+</body>
+</html>
