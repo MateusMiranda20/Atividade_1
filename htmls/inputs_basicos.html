@@ -80,6 +80,28 @@
 
         <!--Input submit-->
         <input type="submit" value="Enviar ">
+
+        <h1>Placeholder e auto-complete</h1>
+
+        <label>Nome</label><br>
+        <input placeholder="Insira seu nome" type="text" name="nome">
+
+        <br><br>
+        <label>Senha</label><br>
+        <input placeholder="Insira uma senha" type="password" name="Senha" /><br>
+
+        <br><br>
+        <!--Auto-complete = Datalist-->
+        <label>Time</label><br>
+        <input placeholder="Insira seu time" type="text" name="Time" list="lista_times">
+         <datalist id="lista_times">
+            <option value="Santos" />
+            <option value="Palmeiras" />
+            <option value="Corinthins" />
+            <option value="São paulo" />
+         </datalist>
+
+
     </form>
 
 
