@@ -27,13 +27,24 @@
         /* Chamando o css com Classes*/
         .tracejado{
             border: dashed 2px #000;
-            background-color: steelblue;
+            background-color: steelblue;/* 1 JEITO DE CHAMAR COR */
         }
 
         /* Chamando o css com ID*/
         #campo_email{
             height: 40px;
+            background-color: #940b2b; /* 2 JEITO DE CHAMAR COR, HEXADECIMAL */
         }
+
+        /* Chamando o hexadecimal transparente */
+        #box-exemplo{
+            width: 400px;
+            height: 400px;
+            background-color: #940b2b80; 
+            position: absolute;
+            top: 0px;
+        }
+       
     </style>
 </head>
 <body>
@@ -52,5 +63,7 @@
         <input class="tracejado" type="password" name="senha" >
 
     </form>
+
+    <div id="box-exemplo"></div>
 </body>
 </html>
