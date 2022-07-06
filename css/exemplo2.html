@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 2 - CSS</title>
     <style>
+        /* Chamando o css com tags*/
+        body{
+            background-color: salmon;
+        }
         h1{
             color: red;
             font-size: 45px;
+        }
+        input{
+            display: block;
+            margin-bottom: 20px;
+            background-color: seagreen;
+        }
+        label{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        /* Chamando o css com Classes*/
+        .tracejado{
+            border: dashed 2px #000;
+            background-color: steelblue;
+        }
+
+        /* Chamando o css com ID*/
+        #campo_email{
+            height: 40px;
         }
     </style>
 </head>
 <body>
     <!--CSS - EMBARCADO, pode ser utilizado dentro do BODY, ou do HEAD-->
     <h1>Exemplo CSS 2</h1>
+
+    <form> 
+
+        <label>Nome</label>
+        <input type="text" name="nome" >
+
+        <label>E-mail</label>
+        <input class="tracejado" id="campo_email" type="email" name="email" >
+
+        <label>Senha</label>
+        <input class="tracejado" type="password" name="senha" >
+
+    </form>
 </body>
 </html>
