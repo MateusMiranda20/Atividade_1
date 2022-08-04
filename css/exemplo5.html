@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position, float e display</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+     @media screen {
+        
+     }
+     
+    ul {
+        list-style: none;
+        background-color: seagreen;
+        margin: 0px;
+        padding:0px;
+       
+    }
+
+    ul > li {
+        display: inline-block;
+        font-size: 24px;
+        padding: 10px;
+        margin: 5px;
+        background-color: springgreen;
+        border-radius: 10px;
+        font-weight: 600;
+        text-transform: lowercase;
+    }
+
+    ul > li:hover {
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+    }
+
+    #conteudo{
+        background-color: #ff660060;
+        width: 500px;
+        margin: auto;
+        padding: 30px;
+        position: absolute;
+      /*position: fixed; aqui fica fixo em cima da rolagem*/
+        top: 20px;
+        right: 0px;
+        border: solid 5px purple;
+        border-radius: 20px 0px 0px 20px;
+    }
+</style>
+<body>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <div id="conteudo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur quisquam libero velit non eos nobis odio perferendis deserunt sint, minima quae. Dolores quisquam placeat autem nemo, accusantium voluptates sunt?
+    </div>
+
+</body>
+</html>
