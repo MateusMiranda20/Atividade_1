@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores em JS </title>
+
+    <style>
+        
+        #box1 {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .paragrafo {
+            background-color: aqua;
+            font-size: 18px;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function funcaoTeste() {
+            //alert('estou aqui')
+            document.getElementById("box1").style.backgroundColor = "blue";
+            document.getElementById("box1").style.textAlign = "center";
+            document.getElementById("box1").style.color = "#FFF";
+
+            document.getElementsByClassName('paragrafo')[1].style.backgroundColor = "red";
+        }
+    </script>
+
+</head>
+<body>
+    <h1> seletores em JS</h1>
+
+    <div id="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quibusdam modi in deleniti! Nisi, ex dolores laborum tempora cumque numquam corporis quas officia ea? Quaerat nobis ipsam architecto ea autem.
+    </div>
+
+    <input type="button" value="Acionar" onclick="javascript:funcaoTeste();">
+
+    <P class="paragrafo"> Paragrafo 1</P> <!-- 0 -->
+    <P class="paragrafo"> Paragrafo 2</P> <!-- 1 -->
+    <P class="paragrafo"> Paragrafo 3</P> <!-- 2 -->
+    <!-- Contagem de programador começa do zero  -->
+</body>
+</html>
