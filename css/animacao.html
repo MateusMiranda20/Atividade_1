@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animação</title>
+</head>
+<style>
+    #linha1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: #fff;
+}
+
+#linha1 > div {
+    background-color: aqua;
+    width: 25%;
+    padding: 1%;
+    height: 200px;
+    align-self: center;
+    
+}
+
+#noticia1:hover {
+    height: 250px;
+    background-color: #f36792;
+}
+
+#noticia1 {
+    transition: height 2s;
+    cursor: pointer;
+}
+</style>
+<body>
+    <section id="linha1">
+        <div  id="noticia1" class="noticia">
+            <h3> titulo 1 </h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore unde error perferendis esse totam dicta! Molestiae ad officia laudantium deleniti? Aut, eum adipisci dignissimos laudantium hic cumque debitis quaerat at?</p>
+        </div>
+        <div class="noticia">
+            <h3> titulo 2 </h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore unde error perferendis esse totam dicta! Molestiae ad officia laudantium deleniti? Aut, eum adipisci dignissimos laudantium hic cumque debitis quaerat at?</p>
+        </div>
+        <div class="noticia">
+            <h3> titulo 3 </h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore unde error perferendis esse totam dicta! Molestiae ad officia laudantium deleniti? Aut, eum adipisci dignissimos laudantium hic cumque debitis quaerat at?</p>
+        </div>
+    </section>
+</body>
+</html>
