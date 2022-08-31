@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultando e exibindo elementos</title>
+</head>
+    <script>
+            function inicial() {
+                for (let index = 0; index <= 10; index++) {
+                    document.getElementsByClassName('submenu')[index].style.display ="none";
+
+                }
+            }
+            
+            function exibirMenu() {
+                if ( document.getElementsByClassName('submenu')[0].style.display =="none") {
+                    for (let index = 0; index <= 10; index++) { 
+                        document.getElementsByClassName('submenu')[index].style.display ="block";
+                    }
+                } else {
+                    for (let index = 0; index <= 10; index++) {
+                    document.getElementsByClassName('submenu')[index].style.display ="none";
+                    }
+                }
+            }     
+
+            
+
+
+            /*document.getElementsByClassName('submenu')[0].style.display ="none";
+            document.getElementsByClassName('submenu')[1].style.display ="none";
+            document.getElementsByClassName('submenu')[2].style.display ="none";
+            document.getElementsByClassName('submenu')[3].style.display ="none";
+            document.getElementsByClassName('submenu')[4].style.display ="none";
+            document.getElementsByClassName('submenu')[5].style.display ="none";
+            document.getElementsByClassName('submenu')[6].style.display ="none";
+            document.getElementsByClassName('submenu')[7].style.display ="none";
+            document.getElementsByClassName('submenu')[8].style.display ="none";
+            document.getElementsByClassName('submenu')[9].style.display ="none";
+        }
+
+        function exibirMenu() {
+            /*if ( document.getElementsByClassName('submenu')[0].style.display =="none") {
+                document.getElementsByClassName('submenu')[0].style.display ="block";
+                document.getElementsByClassName('submenu')[1].style.display ="block";
+                document.getElementsByClassName('submenu')[2].style.display ="block";
+                document.getElementsByClassName('submenu')[3].style.display ="block";
+                document.getElementsByClassName('submenu')[4].style.display ="block";
+                document.getElementsByClassName('submenu')[5].style.display ="block";
+                document.getElementsByClassName('submenu')[6].style.display ="block";
+                document.getElementsByClassName('submenu')[7].style.display ="block";
+                document.getElementsByClassName('submenu')[8].style.display ="block";
+                document.getElementsByClassName('submenu')[9].style.display ="block";
+            } */ /*else {
+                document.getElementsByClassName('submenu')[0].style.display ="none";
+                document.getElementsByClassName('submenu')[1].style.display ="none";
+                document.getElementsByClassName('submenu')[2].style.display ="none";
+                document.getElementsByClassName('submenu')[3].style.display ="none";
+                document.getElementsByClassName('submenu')[4].style.display ="none";
+                document.getElementsByClassName('submenu')[5].style.display ="none";
+                document.getElementsByClassName('submenu')[6].style.display ="none";
+                document.getElementsByClassName('submenu')[7].style.display ="none";
+                document.getElementsByClassName('submenu')[8].style.display ="none";
+                document.getElementsByClassName('submenu')[9].style.display ="none";
+            }    
+        }*/
+    </script>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            list-style: none;
+        }
+        .submenu {
+            background-color: chartreuse;
+            padding: 12px;
+            
+        }
+    </style>
+
+    <body onload="inicial();">
+        <ul onclick="exibirMenu();"> menu
+            <li class="submenu">item 1</li>
+            <li class="submenu">item 2</li>
+            <li class="submenu">item 3</li>
+            <li class="submenu">item 4</li>
+            <li class="submenu">item 5</li>
+            <li class="submenu">item 6</li>
+            <li class="submenu">item 7</li>
+            <li class="submenu">item 8</li>
+            <li class="submenu">item 9</li>
+            <li class="submenu">item 10</li>
+            <li class="submenu">item 11</li>
+        </ul>
+    </body>
+</html>
