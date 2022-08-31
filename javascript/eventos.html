@@ -27,28 +27,35 @@
             document.getElementById("box1").style.backgroundColor = "blue";
             document.getElementById("box1").style.textAlign = "center";
             document.getElementById("box1").style.color = "#FFF";
+            
 
             document.getElementsByClassName('paragrafo')[0].style.backgroundColor = "red";
             document.getElementsByClassName('paragrafo')[1].style.backgroundColor = "blue";
             document.getElementsByClassName('paragrafo')[2].style.backgroundColor = "orange";
         }
 
-        
+         alert('Estou sendo acionado!');
+
+         
     </script>
 
 </head>
 <body>
-    <h1 onmouseover="funcaoTeste()"> seletores em JS</h1>
+    <h1> seletores em JS</h1>
 
-    <div id="box1">
+    <div  onmouseout = funcaoTeste(); id="box1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quibusdam modi in deleniti! Nisi, ex dolores laborum tempora cumque numquam corporis quas officia ea? Quaerat nobis ipsam architecto ea autem.
     </div>
 
-    <input type="button" value="Acionar" onclick="javascript:funcaoTeste();">
+    <input type="button" value="Acionar" onclick="funcaoTeste()">
 
     <P class="paragrafo"> Paragrafo 1</P> <!-- 0 -->
     <P class="paragrafo"> Paragrafo 2</P> <!-- 1 -->
     <P class="paragrafo"> Paragrafo 3</P> <!-- 2 -->
     <!-- Contagem de programador começa do zero  -->
+    <br><br>
+
+    <label> CPF </label>
+    <input type="text" name="cpf" placeholder="CPF" onchange="funcaoTeste()">
 </body>
 </html>
