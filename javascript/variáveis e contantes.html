@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variáveis e constantes</title>
+</head>
+
+<script>
+    var variavel1 = "Mateus miranda";
+    var variavel2 = 1000;
+    console.log(variavel1+variavel2)
+    //  Aqui em cima vemos uma concatenação, quando vc junta duas palavras. ->
+
+    variavel1 = 1234;
+
+    console.log(variavel1+variavel2)
+
+    // Variaveis do tipo LET, elas são usadas do tipo grupo bloco  ou seja, ela so existe dentro de um bloco de codigo -> 
+
+    /* Exemplo 1, aqui o console vai da erro, pois esta fora do bloco 
+    if(variavel1 > 1){
+       let variavel3 = 500;
+    }
+    console.log(variavel3) */
+
+    //Exemplo 2, aqui veremos o certo. ->
+    if(variavel1 > 1){
+       let variavel3 = 500;
+       console.log(variavel3) 
+    }
+    
+</script>
+
+<body>
+    
+</body>
+</html>
