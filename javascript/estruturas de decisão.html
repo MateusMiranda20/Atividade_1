@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrutura de decisão</title>
 </head>
+<script>
+
+    var idade = 17;
+    var sexo = "Masculino";
+    var time = "";
+
+
+    if(idade >= 18 ) {
+        console.log('Maior de idade');
+    } else if (sexo == "Masculino") {
+        console.log("Menor de idade, talvez que goste de carrinho");
+
+        switch (time) {
+            case "São paulo":
+                    console.log("São paulino");              
+                break;
+        
+            case "Corinthinas":
+                    console.log("Corithiano");                
+                break;
+        
+            case "Santos":
+                    console.log("Santista");                
+                break;
+        
+            case "Plameiras":
+                    console.log("Palmeirense") ;               
+                break;
+            default:
+                console.log("Não gosta de futebool");
+                break;
+        }
+
+    } else {
+        console.log("Menor de idade, talvez que goste de boneca");
+    }
+
+
+
+
+</script>
 <body>
     <h1>Decisão</h1>
 </body>
